@@ -1,8 +1,6 @@
-() => {
-  cy.visit(baseUrl + "/main.html"); 
-  cy.get('.holder')
-    .should('be.visible') // Ensure the element is visible
-    .should('have.css', 'display', 'flex')
-    .should('have.css', 'justify-content', 'space-between')
-    .should('have.css', 'flex-wrap', 'wrap');
+.holder {
+  display: flex;            /* Enable Flexbox layout */
+  flex-wrap: wrap;          /* Allow items to wrap onto the next row */
+  justify-content: space-between; /* Space between items */
+  align-items: center;      /* Center items vertically in the row (if height is specified) */
 }
