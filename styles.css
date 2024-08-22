@@ -1,2 +1,14 @@
+.holder {
+  display: flex;            /* Enable Flexbox layout */
+  flex-wrap: wrap;          /* Allow items to wrap onto the next row */
+  justify-content: space-between; /* Space out items evenly with space between them */
+  align-items: center;      /* Align items vertically in the center */
+  padding: 0 10px;          /* Add padding to make sure items touch the edges */
+  box-sizing: border-box;   /* Include padding in the element's total width and height */
+}
 
-/* Your CSS Code here. */
+.item {
+  /* Optional: Set width or flex properties if needed */
+  flex: 1 1 auto;           /* Allow items to grow and shrink as needed */
+  margin: 0 10px;           /* Space between items */
+}
